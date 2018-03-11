@@ -5,8 +5,8 @@ set -e
 cd ~
 
 # Install some dependencies for Ruby
-sudo apt-get update
-sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs mysql-server mysql-client libmysqlclient-dev imagemagick
+sudo apt-get updat
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
 
 # Install rbenv and ruby-build plugins
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -16,7 +16,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 
-echo -n "input Ruby Version"
+echo -n "input Ruby Version: "
 read rv
 
 rbenv install -v $rv
