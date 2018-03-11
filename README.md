@@ -6,22 +6,19 @@
 
 2.스트립트에 실행 권한을 주자
 
-<pre><code>$ sudo chmod u+x ~/rubyshell/shell_v0.1.sh</code></pre>
+<pre><code>$ sudo chmod u+x ~/rubyshell/shell_final.sh</code></pre>
 
 3.실행하자
-<pre><code>$ ~/rubyshell/shell_v0.1.sh</code></pre>
-
--->여기까지 rbenv 를 받아올수있는거 구현완료
+<pre><code>$ ~/rubyshell/shell_final.sh</code></pre>
 
 
+4.쉘 정보가져오기?
+<pre><code>$ source ~/.profile</code></pre>
 
----------------------------------- 구현 못한부분
-
-4. 중간에 루비버전을 물어본다 쓰자
+5. 다됬으니
+<pre><code>$ ruby -v</code></pre>
+<pre><code>$ rails -v</code></pre>
 <br/>
-예시 "input Ruby Version" <= 2.4.0
-
-
-shell1 이라는 파일로 있다 구현못함
-
-
+으로 루비 버전 레일즈버전 체크 해보자.
+<br/><br/>
+해당글은 본인이 쓰기위해 만든 코드입니다.

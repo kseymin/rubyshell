@@ -1,6 +1,8 @@
 #!/bin/bash -e
+
 cd ~
-udo apt-get update
+
+sudo apt-get update
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
 cd
@@ -27,4 +29,5 @@ gem install rails -v 5.0.6
 rbenv rehash
 echo "Finished installing rails"
 rails -v
-rbenv rehash                                      
+rbenv rehash
+                                  
