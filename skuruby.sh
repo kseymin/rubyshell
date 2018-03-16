@@ -35,4 +35,5 @@ rbenv rehash
 echo "Finished installing rails"
 rails -v
 rbenv rehash
-                                  
+
+source ~/.profile                                  
