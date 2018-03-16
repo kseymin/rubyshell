@@ -6,19 +6,27 @@
 
 2.스트립트에 실행 권한을 주자
 
-<pre><code>$ sudo chmod u+x ~/rubyshell/shell_final.sh</code></pre>
+<pre><code>$ sudo chmod u+x ~/rubyshell/skuruby.sh</code></pre>
 
 3.실행하자
-<pre><code>$ ~/rubyshell/shell_final.sh</code></pre>
-
-
-4.쉘 정보가져오기?
-<pre><code>$ source ~/.profile</code></pre>
-
-5. 다됬으니
-<pre><code>$ ruby -v</code></pre>
-<pre><code>$ rails -v</code></pre>
-<br/>
-으로 루비 버전 레일즈버전 체크 해보자.
+<pre><code>$ ~/rubyshell/skuruby.sh</code></pre>
 <br/><br/>
-해당글은 본인이 쓰기위해 만든 코드입니다.
+
+4. 루비 버전과 레일즈 버전을 입력해달라고한다.
+입력해주자
+
+
+5. 제대로 설치되었는지 테스트
+<pre><code>$ ruby -v</code></pre>
+-->4번에 루비버전 이나오면 완료 
+
+<pre><code>$ rails -v</code></pre>
+--> 4번에 레일즈 버전이 제대로나오면 완료
+
+<br/><br/>
+6. 제대로 설치가 안될시
+<pre><code>$ source ~/.profile</code></pre>
+위에 명령을 주어보자 그후 다시 5번 테스트 를 해보자.
+<br/><br/>
+
+해당글은 본인이 쓰기위해 만든 코드입니다. 미흡합니다..
