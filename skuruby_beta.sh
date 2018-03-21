@@ -14,21 +14,29 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-
+~/.rbenv/bin/rbenv init
+source ~/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 
+source ~/.bashrc
+
 
 git clone https://github.com/rbenv/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+
+source ~/.bashrc
+
 
 rbenv install $rv
 rbenv global $rv
 ruby -v
 
-gem install bundler
+rbenv exec gem install bundler  --no-ri --no-rdoc
 gem install rails -v $railsv
 rbenv rehash
 echo "Finished installing rails"
 rails -v
 rbenv rehash
+
+
